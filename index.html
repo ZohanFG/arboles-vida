@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árboles de Vida</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>Árboles de Vida</h1>
+      <p>Proyecto de desarrollo sustentable</p>
+      <a href="#arboles" class="boton">Ver árboles</a>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#arboles">Árboles</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="proyecto" class="seccion">
+      <h2>Sobre el proyecto</h2>
+      <p>
+        Este proyecto busca dar a conocer la importancia de los árboles en nuestra comunidad,
+        su historia, sus beneficios ecológicos y su contribución al desarrollo sustentable.
+        Al escanear un código QR, cualquier persona podrá acceder a la información de cada árbol.
+      </p>
+    </section>
+
+    <section id="arboles" class="seccion">
+      <h2>Árboles registrados</h2>
+
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/300x200?text=Arbol+1" alt="Árbol 1">
+          <h3>Árbol 1</h3>
+          <p>Información general, historia y beneficios ecológicos.</p>
+          <button onclick="mostrarInfo('Árbol 1','Especie: Pendiente','Edad aproximada: Pendiente','Ubicación: Pendiente','Historia: Aquí irá la historia de este árbol.')">
+            Ver información
+          </button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/300x200?text=Arbol+2" alt="Árbol 2">
+          <h3>Árbol 2</h3>
+          <p>Datos importantes sobre este árbol y su valor ambiental.</p>
+          <button onclick="mostrarInfo('Árbol 2','Especie: Pendiente','Edad aproximada: Pendiente','Ubicación: Pendiente','Historia: Aquí irá la historia de este árbol.')">
+            Ver información
+          </button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/300x200?text=Arbol+3" alt="Árbol 3">
+          <h3>Árbol 3</h3>
+          <p>Características, importancia y aportes al ecosistema.</p>
+          <button onclick="mostrarInfo('Árbol 3','Especie: Pendiente','Edad aproximada: Pendiente','Ubicación: Pendiente','Historia: Aquí irá la historia de este árbol.')">
+            Ver información
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="infoArbol" class="seccion info-arbol oculto">
+      <h2 id="nombreArbol"></h2>
+      <p id="dato1"></p>
+      <p id="dato2"></p>
+      <p id="dato3"></p>
+      <p id="dato4"></p>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <p>Proyecto escolar de desarrollo sustentable.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Árboles de Vida</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
